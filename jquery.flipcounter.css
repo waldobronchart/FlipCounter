@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Share+Tech);
+
+ul.flipcounter {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.flipcounter li {
+    display: inline-block;
+    margin-left: 14px;
+}
+
+ul.flipcounter li .numberwrap {
+    position: relative;
+    width: 78px;
+    height: 130px;
+}
+
+ul.flipcounter .flipper_top {
+    position: absolute;
+    width: 76px;
+    height: 60px;
+    background: url(images/grain.png), #19191c;
+    border-radius: 1px 1px 0px 0px;
+    box-shadow: 0px -2px 6px 1px rgba(0, 0, 0, 0.25);
+    border: 1px solid #222226;
+    border-top: 1px solid #2e2f37;
+    border-bottom: 0;
+    top: 2px;
+    text-align: center;
+    overflow: hidden;
+}
+
+ul.flipcounter .flipper_bottom {
+    position: absolute;
+    width: 76px;
+    height: 56px;
+    background: url(images/grain.png), #242529;
+    border-radius: 0px 0px 1px 1px;
+    
+    border: 1px solid #28292d;
+    border-bottom: 1px solid #3d3e42;
+    border-top: 0;
+    top: 63px;
+    left: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.flipper_top_front { -webkit-transform-origin: 50% 100%; }
+.flipper_bottom_front { -webkit-transform-origin: 50% 0%; }
+
+ul.flipcounter .flipper_top1 { top: 0px; box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.55); }
+ul.flipcounter .flipper_top2 { top: 2px; box-shadow: none; }
+
+ul.flipcounter .flipper_bottom1 { top: 63px; box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.6); }
+ul.flipcounter .flipper_bottom2 { top: 69px; box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.2); }
+ul.flipcounter .flipper_bottom3 { top: 71px; box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.2); }
+ul.flipcounter .flipper_bottom4 { top: 72px; box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.4); }
+
+
+ul.flipcounter span, 
+ul.flipcounter li.comma {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 126px;
+    line-height: 126px;
+    color: #e4e4e4;
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+}
+
+
+ul.flipcounter span { display: block; }
+ul.flipcounter div.flipper_bottom span { margin-top: -60px; }
+
+ul.flipcounter li.comma { 
+    text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+    color: #e4e4e4;
+    margin-left: 16px;
+}
+
+ul.flipcounter .rings {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(images/rings.png) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+ul.flipcounter .flipper_top .rings { background-position: -4px 53px; }
+ul.flipcounter .flipper_bottom .rings { background-position: -4px -8px; }
