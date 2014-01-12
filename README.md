@@ -3,6 +3,8 @@ FlipCounter
 
 A javascript flipping number counter without images (css-only).
 
+Demo Video: https://vimeo.com/45532809
+
 ## Usage
 
 ``` html
